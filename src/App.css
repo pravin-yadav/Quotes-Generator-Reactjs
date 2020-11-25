@@ -3,3 +3,24 @@
 }
 
 
+.quote {
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  padding: 25px 5px;
+  margin: 15% auto;
+}
+
+button {
+  border-radius: 4px;
+  background-color: #337ab7;
+  color: white;
+  font-size: 1.1rem;
+  padding: 1.6rem;
+  text-align: center;
+  border: none;
+  outline: 0;
+  width: 300px;
+  cursor: pointer;
+}
+
