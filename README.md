@@ -1,11 +1,11 @@
 # Quotes Generator
 
+This Quotes Generator project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+
 ##### snapshots
 <div>
     <img src="https://raw.github.com/pravin-yadav/Quotes-Generator-Reactjs/main/screenshot.png" width="800px" height="400px"/>
 </div>
-
-This Quotes Generator project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
 
 ## Installation
 
