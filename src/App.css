@@ -1,33 +1,14 @@
-.App {
+.qod {
+  width: 60%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0 auto;
   text-align: center;
 }
 
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  background-color: #000;
-}
-
-.quote {
-  text-align: center;
-  color: white;
-  font-size: 30px;
-  padding: 25px 5px;
-  margin: 20% auto 10%;
-}
-
-button {
-  border-radius: 4px;
-  background-color: #337ab7;
-  color: white;
-  font-size: 1.1rem;
-  padding: 1.6rem;
-  text-align: center;
-  border: none;
-  outline: 0;
-  width: 300px;
-  cursor: pointer;
+.qod-text{
+  font-size: 26px;
 }
 
 .nav{

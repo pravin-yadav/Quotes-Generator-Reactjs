@@ -1,5 +1,7 @@
 import React from 'react';
 import axios from 'axios';
+import Jumbotron from 'react-bootstrap/Jumbotron'
+import Button from 'react-bootstrap/Button'
 
 class QuotesGen extends React.Component{
     state= {
@@ -19,13 +21,15 @@ class QuotesGen extends React.Component{
         let quote = quotes.map(quote => quote.quote);
         return(
             <React.Fragment>
-                <div className="quote">
-                    {hasQuote ? quote : "Click to generate quote.. ."}
-                </div>
+                <div className="container">
+                    <div className="qod">
+                        <Jumbotron>
+                            <h1 className="qod-text"> {hasQuote ? quote : "Click to generate quote.. ."}</h1>
+                        </Jumbotron>
 
-                <button type="button" onClick={this.fetchQuotes}>
-                    Quote Of The Day
-                </button>
+                        <Button onClick={this.fetchQuotes} variant="primary">Quote Of the Day</Button>
+                    </div>
+                </div>
             </React.Fragment>
         )
     }
