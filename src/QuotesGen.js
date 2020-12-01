@@ -27,7 +27,7 @@ class QuotesGen extends React.Component{
                             <h1 className="qod-text"> {hasQuote ? quote : "Click to generate quote.. ."}</h1>
                         </Jumbotron>
 
-                        <Button onClick={this.fetchQuotes} variant="primary">Quote Of the Day</Button>
+                        <Button className="btn-quote" onClick={this.fetchQuotes} variant="primary">Quote Of the Day</Button>
                     </div>
                 </div>
             </React.Fragment>
