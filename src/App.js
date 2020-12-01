@@ -1,6 +1,7 @@
 import React from 'react';
-import './App.css';
 import QuotesGen from './QuotesGen';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css';
 
 function App() {
   return (
