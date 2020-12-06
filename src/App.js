@@ -1,7 +1,8 @@
 import React, {useState} from 'react';
-import QuotesGen from './QuotesGen';
 import Tabs from 'react-bootstrap/Tabs'
 import Tab from 'react-bootstrap/Tab'
+import QuotesGen from './QuotesGen';
+import RandomQuote from './RandomQuote';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
@@ -18,7 +19,7 @@ function App() {
           <QuotesGen />
         </Tab>
         <Tab eventKey="random" title="RANDOM">
-          <QuotesGen />
+          <RandomQuote />
         </Tab>
         <Tab eventKey="success" title="Success">
           <QuotesGen />
