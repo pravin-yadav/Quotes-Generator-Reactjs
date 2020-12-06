@@ -4,7 +4,22 @@ import Jumbotron from 'react-bootstrap/Jumbotron'
 import Button from 'react-bootstrap/Button'
 
 class RandomQuote extends React.Component{
+    state= {
+        quotes: [],
+        hasQuote: false
+    }
+    fetchQuotes = (e) => {
+        e.preventDefault();
+        axios.get('https://quotes.rest//quote/random?language=en').then(response => {
+            console.log("Response", response.data)
+            this.setState({quotes: response.data.contents.quotes, hasQuote: true})
+        }).catch(error => {
+            console.log(error)
+        })
+    }
     render(){
+        const { quotes,hasQuote } = this.state || [];
+        let quote = quotes.map(quote => quote.quote);
         return(
             <React.Fragment>
                 <div className="container">
@@ -13,7 +28,7 @@ class RandomQuote extends React.Component{
                             <h1 className="qod-text"> {hasQuote ? quote : "Click to generate quote.. ."}</h1>
                         </Jumbotron>
 
-                        <Button className="btn-quote" variant="primary">Random Quote</Button>
+                        <Button className="btn-quote" onClick={this.fetchQuotes} variant="primary">Random Quote</Button>
                     </div>
                 </div>
             </React.Fragment>
